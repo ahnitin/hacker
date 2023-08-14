@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url("hack1.jpg");
+
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1 style="text-align:center; color: white;">
+        Want to Become a Hacker 
+    </h1>
+    <div class="row">
+        <div class="col">
+    <form id="registration" onsubmit="return false;">
+        <label for ="fname" style="text-align:center; color: white;"> First Name </label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for = "lname" style="text-align: center;color: white;"> Last Name </label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for ="email" style="color: white;">Email ID</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for ="contact" style="color: white;">contact Number </label> <br>
+        <input type="number" id="contact" name="contact" required><br><br>
+        <button type="submit" onclick="logformdata()">Register</button>  
+    </form>
+
+    <script>
+             function logformdata()
+             {
+                let first = document.getElementById('fname').value;
+                let second = document.getElementById('lname').value;
+                let email = document.getElementById('email').value;
+                let contact = document.getElementById('contact').value;
+
+                console.log("First Name :",first)
+                console.log("Last Name :",second)
+                console.log("email id :",email)
+                console.log("contact number :",contact)
+             }
+    </script>
+    </div>
+</div>
+    </div>
+</body>
+</html>
